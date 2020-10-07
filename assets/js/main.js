@@ -18,6 +18,10 @@
 
 	// Play initial animations on page load.
 	$window.on('load', function () {
+
+			const preload = document.querySelector('.preload');
+			preload.classList.add('preload-finish');
+
 		window.setTimeout(function () {
 			console.log(matchMedia("(max-width: 700px)").matches);
 
