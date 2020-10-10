@@ -2218,7 +2218,7 @@ ul.actions.special {
     width: 100%;
     text-align: center;
     /* experiment for svg */
-    padding-left: 250px;
+    /* padding-left: 250px; */
     position: relative;
     top: 1.5em;
 }
@@ -3163,6 +3163,7 @@ html,
 body {
     height: 100%;
     width: 100%;
+    scroll-behavior: smooth;
 }
 
 html {
