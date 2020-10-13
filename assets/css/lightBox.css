@@ -1,0 +1,94 @@
+.gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .gallery .row {
+    display: flex;
+    justify-content: center;
+    max-width: 900px;
+  }
+  .gallery .row img {
+    width: 31%;
+    min-height: 250px;
+    margin: 5px;
+    cursor: pointer;
+    transition: all ease-in-out 250ms;
+    filter: brightness(60%);
+    object-fit: cover;
+  }
+  .gallery .row img:hover {
+    filter: brightness(100%);
+  }
+  
+  .lightboxContainer {
+    background-color: #00000099;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    display: none;
+  }
+  .lightboxContainer .lightbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .lightboxContainer .lightbox img {
+    width: 100%;
+    max-width: 800px;
+  }
+  .lightboxContainer .lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 40px;
+    color: white;
+  }
+  .lightboxContainer .lightbox .prev,
+  .lightboxContainer .lightbox .next {
+    user-select: none;
+    cursor: pointer;
+    font-size: 50px;
+    color: white;
+    margin: 40px;
+    font-weight: 800;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .gallery {
+      width: initial;
+      height: initial;
+    }
+    .gallery .row {
+      flex-direction: column;
+      align-items: center;
+    }
+    .gallery .row img {
+      width: 400px;
+      height: 400px;
+    }
+  
+    .lightboxContainer .lightbox .prev,
+    .lightboxContainer .lightbox .next {
+      margin: 15px;
+    }
+  }
+  @media only screen and (max-width: 500px) {
+    .gallery .row img {
+      width: 300px;
+      height: 300px;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    .gallery .row img {
+      width: 250px;
+      height: 250px;
+    }
+  }
+  
