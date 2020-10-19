@@ -2,12 +2,12 @@ let currentSlide = 0; // Current Slide
 let images = []; // Images Array
 
 // Images List
-images[0] = 'https://austinbnetworking.github.io/Archives/lightbox/images/1.jpg';
-images[1] = 'https://austinbnetworking.github.io/Archives/lightbox/images/2.jpg';
-images[2] = 'https://austinbnetworking.github.io/Archives/lightbox/images/3.jpg';
-images[3] = 'https://austinbnetworking.github.io/Archives/lightbox/images/4.jpg';
-images[4] = 'https://austinbnetworking.github.io/Archives/lightbox/images/5.jpg';
-images[5] = 'https://austinbnetworking.github.io/Archives/lightbox/images/6.jpg';
+images[0] = 'https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05466_kwlv0n.jpg';
+images[1] = 'https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05621_zgtcco.jpg';
+images[2] = 'https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05513_gfbiwi.jpg';
+images[3] = 'https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05588_nb0dma.jpg';
+images[4] = 'https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05459_ziuomy.jpg';
+images[5] = 'https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05586_oj8jfo.jpg';
 
 // Opens Lightbox
 function openModal() {

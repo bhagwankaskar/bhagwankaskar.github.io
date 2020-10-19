@@ -6,19 +6,20 @@
   .gallery .row {
     display: flex;
     justify-content: center;
-    max-width: 900px;
+    max-width: 1200px;
   }
   .gallery .row img {
     width: 31%;
     min-height: 250px;
     margin: 5px;
     cursor: pointer;
-    transition: all ease-in-out 250ms;
-    filter: brightness(60%);
+    /* transition: all ease-in-out 250ms; */
+    transition: .3s ease-in-out;
+    filter: grayscale(100%);
     object-fit: cover;
   }
   .gallery .row img:hover {
-    filter: brightness(100%);
+    filter: grayscale(0);
   }
   
   .lightboxContainer {
