@@ -3462,3 +3462,16 @@ html {
     color: #2e323a;
 }
 
+.client_font{
+    font-size: 1em;
+    font-family: inherit;
+    padding: 10px 0px;
+    color: #eee;
+    cursor: pointer;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.client_font:hover {
+    color: #f98780;
+}
