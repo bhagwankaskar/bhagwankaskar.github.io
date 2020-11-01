@@ -1970,7 +1970,7 @@ ul.actions.special {
 }
 
 .feature-list h3 {
-    color: #992026 !important;
+    color: #992026 ;
     margin: -0.35em 0 0.75em 0;
     font-size: 1.15em;
     letter-spacing: 0.05em;
@@ -2192,7 +2192,7 @@ ul.actions.special {
     height: 24em;
     /* temp.. */
     /* background: #9D4254; */
-    background: url("../../images/banner_tent.jpg") center center;
+    background: url("../../images/banner_update.jpg") center center;
     background-size: cover;
     padding: 0;
 }
@@ -3473,5 +3473,9 @@ html {
 }
 
 .client_font:hover {
+    color: #f98780;
+}
+
+.addHover:hover {
     color: #f98780;
 }
