@@ -20,7 +20,7 @@
 	$window.on('load', function () {
 
 			const preload = document.querySelector('.preload');
-			const logo = document.querySelectorAll('#logo_shree_ganesh path');
+			const logo = document.querySelectorAll('#preloadLogo path');
 			console.log({logo})
 		for(let i=0;i< logo.length; i++){
 			console.log('---> length', `${i} is ${logo[i].getTotalLength()}`)
@@ -31,21 +31,19 @@
 	
 			// 	$body.removeClass('is-preload');
 			// }, 0);
-			preload.classList.add('preload-finish');
+
+			window.setTimeout(function () {
+				preload.classList.add('preload-finish');
+			}, 5000);
 
 	
 		if (matchMedia("(max-width: 700px)").matches) {
 			$('#svgfile').addClass('mb10')
 			$('#svgfile').load('./images/mobileLogo.svg');
-
 			// css changes for mobile view
 			$("#svgfile").css("position", "absolute");
 			$("#svgfile").css("left", "12%");
 			$("#svgfile").css("top", "32%");
-
-
-
-
 
 		} else {
 			$('#svgfile').addClass('mb20')
