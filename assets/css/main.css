@@ -3550,6 +3550,14 @@ html {
     left: 44%;
 }
 
+.shree_ganesh_mobile{
+    width: 15% !important;
+    height: 15% !important;
+    position: absolute;
+    top: 34%;
+    left: 40%;
+}
+
 #preloadLogo {
     position: absolute;
     top: 50%;
@@ -3710,7 +3718,17 @@ html {
     }
 }
 
-#spin_circle {
+.preload_text{
+    width: 95% !important;
+    position: absolute;
+    top: 51% !important;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.spin {
     /* animation: spin 5000ms linear 0 infinite !important; */
     animation-name: spin;
     animation-duration: 4000ms;
@@ -3718,10 +3736,20 @@ html {
     animation-timing-function: linear; 
 }
 
+
+
 .pos{
     position: absolute;
     top: 21%;
     left: 42%;
+}
+
+.pos_mobile{
+    
+    width: 25% !important;
+    position: absolute;
+    top: 28%;
+    left: 34%;
 }
 
 
@@ -3729,6 +3757,14 @@ html {
         position: absolute;
         top: 18%;
         left: 41%;
+}
+
+.pos1_mobile{
+    width: 30% !important;
+    position: absolute;
+    top: 25%;
+    left: 32%;
+    
 }
 
 

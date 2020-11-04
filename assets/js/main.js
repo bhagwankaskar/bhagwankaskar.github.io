@@ -22,9 +22,9 @@
 			const preload = document.querySelector('.preload');
 			const logo = document.querySelectorAll('#preloadLogo path');
 			console.log({logo})
-		for(let i=0;i< logo.length; i++){
-			console.log('---> length', `${i} is ${logo[i].getTotalLength()}`)
-		}
+		// for(let i=0;i< logo.length; i++){
+		// 	console.log('---> length', `${i} is ${logo[i].getTotalLength()}`)
+		// }
 
 			// window.setTimeout(function () {
 			// 	console.log(matchMedia("(max-width: 700px)").matches);
@@ -38,12 +38,19 @@
 
 	
 		if (matchMedia("(max-width: 700px)").matches) {
-			$('#svgfile').addClass('mb10')
+			$('#svgfile').addClass('pos_mobile')
 			$('#svgfile').load('./images/mobileLogo.svg');
 			// css changes for mobile view
 			$("#svgfile").css("position", "absolute");
 			$("#svgfile").css("left", "12%");
 			$("#svgfile").css("top", "32%");
+
+			$('#spin_circle').addClass('pos_mobile')
+			$('#spin_circle1').addClass('pos1_mobile')
+			$('#preloadLogo').addClass('preload_text')
+			$('#logo_shree_ganesh').addClass('shree_ganesh_mobile')
+
+
 
 		} else {
 			$('#svgfile').addClass('mb20')
