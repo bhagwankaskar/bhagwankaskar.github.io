@@ -176,7 +176,7 @@ html {
 
 body.is-preload *,
 body.is-preload *:before,
-body.is-preload *:after {
+/* body.is-preload *:after {
     -moz-animation: none !important;
     -webkit-animation: none !important;
     -ms-animation: none !important;
@@ -185,7 +185,7 @@ body.is-preload *:after {
     -webkit-transition: none !important;
     -ms-transition: none !important;
     transition: none !important;
-}
+} */
 
 body,
 input,
@@ -1970,7 +1970,7 @@ ul.actions.special {
 }
 
 .feature-list h3 {
-    color: #992026 ;
+    color: #992026;
     margin: -0.35em 0 0.75em 0;
     font-size: 1.15em;
     letter-spacing: 0.05em;
@@ -2204,7 +2204,7 @@ ul.actions.special {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.8);
+    background: rgba(0, 0, 0, 0.8);
     /* background: url("images/overlay.png"); */
 }
 
@@ -3446,7 +3446,7 @@ html {
     }
 }
 
-.scroll-up{
+.scroll-up {
     position: fixed;
     bottom: 15px;
     right: 10px;
@@ -3458,11 +3458,11 @@ html {
     text-align: center;
 }
 
-.scroll-up a{
+.scroll-up a {
     color: #2e323a;
 }
 
-.client_font{
+.client_font {
     font-size: 1em;
     font-family: inherit;
     padding: 10px 0px;
@@ -3478,4 +3478,166 @@ html {
 
 .addHover:hover {
     color: #f98780;
+}
+
+.preload {
+    position: fixed;
+    /* z-index: 9999999; */
+    z-index: 1;
+    /* background: rgb(226, 169, 169); */
+    background: #fff;
+    width: 100%;
+    height: 100vh;
+    transition: opacity 10 ease;
+}
+
+.preload-finish {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.preload .preload-logo {
+    text-align: center;
+}
+
+.svg-obj {
+    position: absolute;
+    z-index: 9999999999;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.path {
+    fill: white;
+    fill-opacity: 0;
+    stroke: white;
+    stroke-width: 5;
+    stroke-linecap: round;
+
+    stroke-dasharray: 860;
+    stroke-dashoffset: 860;
+    animation: draw 2s linear forwards;
+}
+
+/* @keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-moz-keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-o-keyframes draw {
+    to {
+        stroke-dashoffset: 0;
+    }
+} */
+
+.shree_ganesh{
+    position: absolute;
+    top: 25%;
+    left: 44%;
+}
+
+#preloadLogo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#preloadLogo path:nth-child(2) {
+    stroke-dasharray: 213;
+    stroke-dashoffset: 213;
+    animation: line-anim 2s ease forwards !important;
+}
+
+#preloadLogo path:nth-child(3) {
+    stroke-dasharray: 246;
+    stroke-dashoffset: 246;
+    animation: line-anim 2s ease forwards !important;
+}
+#preloadLogo path:nth-child(4) {
+    stroke-dasharray: 235;
+    stroke-dashoffset: 235;
+    animation: line-anim 2s ease forwards !important;
+}
+#preloadLogo path:nth-child(5) {
+    stroke-dasharray: 206;
+    stroke-dashoffset: 206;
+    animation: line-anim 2s ease forwards !important;
+}
+#preloadLogo path:nth-child(6) {
+    stroke-dasharray: 260;
+    stroke-dashoffset: 260;
+    animation: line-anim 2s ease forwards !important;
+}
+
+
+
+@keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes line-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes draw-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes draw-anim {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+#spin_circle {
+    /* animation: spin 5000ms linear 0 infinite !important; */
+    animation-name: spin;
+    animation-duration: 4000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
+}
+
+.pos{
+    position: absolute;
+    top: 21%;
+    left: 42%;
+}
+
+
+.pos1{
+        position: absolute;
+        top: 18%;
+        left: 41%;
+}
+
+
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
 }

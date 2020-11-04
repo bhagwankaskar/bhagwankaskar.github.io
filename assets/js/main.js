@@ -20,13 +20,20 @@
 	$window.on('load', function () {
 
 			const preload = document.querySelector('.preload');
+			const logo = document.querySelectorAll('#logo_shree_ganesh path');
+			console.log({logo})
+		for(let i=0;i< logo.length; i++){
+			console.log('---> length', `${i} is ${logo[i].getTotalLength()}`)
+		}
+
+			// window.setTimeout(function () {
+			// 	console.log(matchMedia("(max-width: 700px)").matches);
+	
+			// 	$body.removeClass('is-preload');
+			// }, 0);
 			preload.classList.add('preload-finish');
 
-		window.setTimeout(function () {
-			console.log(matchMedia("(max-width: 700px)").matches);
-
-			$body.removeClass('is-preload');
-		}, 100);
+	
 		if (matchMedia("(max-width: 700px)").matches) {
 			$('#svgfile').addClass('mb10')
 			$('#svgfile').load('./images/mobileLogo.svg');
@@ -37,12 +44,6 @@
 			$("#svgfile").css("top", "32%");
 
 
-			$(".loading").css("position", "absolute");
-			$(".loading").css("left", "17%");
-			$(".loading").css("top", "15%");
-			$(".loading").css("top", "15%");
-			$(".loading").css("width", "0.8em");
-			$(".loading").css("height", "0.8em");
 
 
 
@@ -94,21 +95,13 @@
 			visibleClass: 'navPanel-visible'
 		});
 
+		var svg = Snap("#paper");
+		var circ = svg.circle(0,1,1)
+		.attr({fill:"rgba(0,255,255,.5)"})
+		.pattern(0,0,5,5)
+		.attr({patternTransform: "rotate(25)"});
+		svg.rect(0,0,'100%','100%').attr({fill: circ});
 
-	var svg = Snap("#paper");
-	var circ = svg.circle(0, 1, 1)
-		.attr({ fill: "rgba(0,255,255,.5)" })
-		.pattern(0, 0, 5, 5)
-		.attr({ patternTransform: "rotate(25)" });
-	svg.rect(0, 0, '100%', '100%').attr({ fill: circ });
 
-
-	/*
-	 *  
-	 * 
-	 * 
-	 * 2013 by Tim Pietrusky
-	 * timpietrusky.com
-	 */
 
 })(jQuery);
