@@ -61,7 +61,7 @@
 
 		window.setTimeout(function () {
 			preload.classList.add('preload-finish');
-		}, 2150);
+		}, 1000);
 	});
 
 	// Dropdowns.
