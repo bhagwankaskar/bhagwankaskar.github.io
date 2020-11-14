@@ -2,12 +2,20 @@ let currentSlide = 0; // Current Slide
 let images = []; // Images Array
 
 // Images List
-images[0] = 'https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05466_kwlv0n.jpg';
-images[1] = 'https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05621_zgtcco.jpg';
-images[2] = 'https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05513_gfbiwi.jpg';
-images[3] = 'https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05588_nb0dma.jpg';
-images[4] = 'https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05459_ziuomy.jpg';
-images[5] = 'https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1568814785/photostream-photos/DSC05586_oj8jfo.jpg';
+images[0] = './images/shree_gallery_1.jpg';
+images[1] = './images/shree_gallery_2.jpg';
+images[2] = './images/shree_gallery_3.jpg';
+images[3] = './images/shree_gallery_4.jpg';
+images[4] = './images/shree_gallery_5.jpg';
+images[5] = './images/shree_gallery_6.jpg';
+images[6] = './images/shree_gallery_7.jpg';
+images[7] = './images/shree_gallery_8.jpg';
+images[8] = './images/shree_gallery_9.jpg';
+images[9] = './images/shree_gallery_10.jpg';
+images[10] = './images/shree_gallery_11.jpg';
+images[11] = './images/shree_gallery_12.jpg';
+images[12] = './images/shree_gallery_13.jpg';
+
 
 // Opens Lightbox
 function openModal() {
