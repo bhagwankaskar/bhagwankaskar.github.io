@@ -18,50 +18,19 @@
 
 	// Play initial animations on page load.
 	$window.on('load', function () {
-
-			const preload = document.querySelector('.preload');
-			const logo = document.querySelectorAll('#preloadLogo path');
-			if (matchMedia("(max-width: 700px)").matches) {
-				$('#svgfile').addClass('pos_mobile')
-				$('#svgfile').load('./images/mobileLogo.svg');
-				// css changes for mobile view
-				$("#svgfile").css("position", "absolute");
-				$("#svgfile").css("left", "12%");
-				$("#svgfile").css("top", "32%");
-	
-				$('#spin_circle').addClass('pos_mobile')
-				$('#spin_circle1').addClass('pos1_mobile')
-				$('#preloadLogo').addClass('preload_text')
-				$('#logo_shree_ganesh').addClass('shree_ganesh_mobile')
-	
-	
-	
-			} else {
-				$('#svgfile').addClass('mb20')
-				$("#svgfile").css("position", "absolute");
-				$("#svgfile").css("left", "14%");
-				$("#svgfile").css("top", "43%");
-				$('#svgfile').load('./images/desktopLogo.svg');
-			}
-			console.log({logo})
-		// for(let i=0;i< logo.length; i++){
-		// 	console.log('---> length', `${i} is ${logo[i].getTotalLength()}`)
-		// }
-
-			// window.setTimeout(function () {
-			// 	console.log(matchMedia("(max-width: 700px)").matches);
-	
-			// 	$body.removeClass('is-preload');
-			// }, 0);
-
-			
-
-	
+		setTimeout(function() {
+			$('#ctn-preloader').addClass('loaded');
+			// Una vez haya terminado el preloader aparezca el scroll
+			$('body').removeClass('no-scroll-y');
 		
-
-		window.setTimeout(function () {
-			preload.classList.add('preload-finish');
-		}, 1000);
+			if ($('#ctn-preloader').hasClass('loaded')) {
+			  // Es para que una vez que se haya ido el preloader se elimine toda la seccion preloader
+			  $('#page-wrapper').delay(1000).queue(function() {
+				// $(this).remove();
+			  });
+			}
+		  }, 3000);
+	
 	});
 
 	// Dropdowns.
