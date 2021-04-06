@@ -15,6 +15,29 @@ images[9] = './images/shree_gallery_10.jpg';
 images[10] = './images/shree_gallery_11.jpg';
 images[11] = './images/shree_gallery_12.jpg';
 images[12] = './images/shree_gallery_13.jpg';
+images[12] = './images/shree_gallery_14.jpg';
+
+images[12] = './images/shree_gallery_15.jpg';
+
+images[12] = './images/shree_gallery_16.jpg';
+images[12] = './images/shree_gallery_17.jpg';
+images[12] = './images/shree_gallery_18.jpg';
+images[12] = './images/shree_gallery_19.jpg';
+images[12] = './images/shree_gallery_20.jpg';
+images[12] = './images/shree_gallery_21.jpg';
+images[12] = './images/shree_gallery_22.jpg';
+images[12] = './images/shree_gallery_23.jpg';
+images[12] = './images/shree_gallery_24.jpg';
+images[12] = './images/shree_gallery_25.jpg';
+images[12] = './images/shree_gallery_26.jpg';
+images[12] = './images/shree_gallery_27.jpg';
+images[12] = './images/shree_gallery_28.jpg';
+images[12] = './images/shree_gallery_29.jpg';
+images[12] = './images/shree_gallery_30.jpg';
+images[12] = './images/shree_gallery_31.jpg';
+images[12] = './images/shree_gallery_32.jpg';
+images[12] = './images/shree_gallery_33.jpg';
+
 
 
 // Opens Lightbox
