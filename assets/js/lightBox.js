@@ -16,9 +16,7 @@ images[10] = './images/shree_gallery_11.jpg';
 images[11] = './images/shree_gallery_12.jpg';
 images[12] = './images/shree_gallery_13.jpg';
 images[13] = './images/shree_gallery_14.jpg';
-
 images[14] = './images/shree_gallery_15.jpg';
-
 images[15] = './images/shree_gallery_16.jpg';
 images[16] = './images/shree_gallery_17.jpg';
 images[17] = './images/shree_gallery_18.jpg';
@@ -37,6 +35,7 @@ images[29] = './images/shree_gallery_30.jpg';
 images[30] = './images/shree_gallery_31.jpg';
 images[31] = './images/shree_gallery_32.jpg';
 images[32] = './images/shree_gallery_33.jpg';
+images[33] = './images/shree_gallery_34.jpg';
 
 
 
