@@ -18,7 +18,6 @@ images[12] = './images/shree_gallery_13.jpg';
 images[13] = './images/shree_gallery_14.jpg';
 images[14] = './images/shree_gallery_15.jpg';
 images[15] = './images/shree_gallery_16.jpg';
-images[16] = './images/shree_gallery_17.jpg';
 images[17] = './images/shree_gallery_18.jpg';
 images[18] = './images/shree_gallery_19.jpg';
 images[19] = './images/shree_gallery_20.jpg';
