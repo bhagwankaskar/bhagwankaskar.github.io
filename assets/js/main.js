@@ -26,7 +26,7 @@
 			if ($('#ctn-preloader').hasClass('loaded')) {
 			  // Es para que una vez que se haya ido el preloader se elimine toda la seccion preloader
 			  $('#page-wrapper').delay(1000).queue(function() {
-				// $(this).remove();
+				$('#ctn-preloader').remove();
 			  });
 			}
 		  }, 3000);
